@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1701091270 source:c:\guru_practice\codeblocks_practice\task1\number_conversions\main.c
+	<stdio.h>
+	<stdlib.h>
+
