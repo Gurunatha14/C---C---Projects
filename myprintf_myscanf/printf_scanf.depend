@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1701879741 source:c:\guru_practice\codeblocks_practice\printf_scanf\main.c
+	<stdio.h>
+	<stdarg.h>
+

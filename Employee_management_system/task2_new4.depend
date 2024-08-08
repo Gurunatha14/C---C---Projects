@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1701861522 source:c:\guru_practice\codeblocks_practice\task2_new4\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+
