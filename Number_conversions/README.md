@@ -1,4 +1,4 @@
-# Number Conversion Projec
+# Number Conversion Project
 
 Welcome to the **Number Conversion** project! This project is a C-based application designed to convert numbers between different formats, such as binary, decimal, octal, and hexadecimal. It is intended as an educational tool for understanding number systems and conversions.
 
