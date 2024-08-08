@@ -63,7 +63,7 @@ if(n > MAX){
 employee *emp;
 FILE *fp;
 
-fp=fopen("EMS_new4.txt","w");
+fp=fopen("EMS.txt","w");
 
 emp=(employee *)calloc(n,sizeof(employee));
 
@@ -93,7 +93,7 @@ scanf("%d",&n);
 employee *emp;
 FILE *fp;
 
-fp=fopen("EMS_new4.txt","a");
+fp=fopen("EMS.txt","a");
 
 emp=(employee *)calloc(n,sizeof(employee));
 printf("Enter data: \n");
@@ -122,7 +122,7 @@ scanf("%d",&id_to_find);
 int found=0;
  employee e1;
   FILE *fp;
-  fp=fopen("EMS_new4.txt","r");
+  fp=fopen("EMS.txt","r");
   while(!feof(fp)){
         fscanf(fp,"%d %s %s\n",&e1.emp_id,e1.emp_name,e1.emp_designation);
         if (e1.emp_id == id_to_find){
@@ -143,7 +143,7 @@ int found=0;
 void display(){
   employee e1;
   FILE *fp;
-  fp=fopen("EMS_new4.txt","r");
+  fp=fopen("EMS.txt","r");
   printf("EMP ID\t\t   EMP NAME\t\tEMP DESIGNATION: \n");
   // rewind(fp);
   //while(fscanf(fp,"%d %s %s\n",&e1.emp_id,e1.emp_name,e1.emp_designation)!=EOF){
@@ -166,7 +166,7 @@ employee e1;
 employee *e2;
 e2=(employee *)calloc((size),sizeof(employee));
 int found=0;
-fp=fopen("EMS_new4.txt","r");
+fp=fopen("EMS.txt","r");
 int line_no=1;
 int line_status=0;
  int currpos=0,prevpos =0;
@@ -203,7 +203,7 @@ while(!feof(fp)){
   fclose(fp);
 
   if(found){
-      fp=fopen("EMS_new4.txt","w");
+      fp=fopen("EMS.txt","w");
     printf("size is %d : \n",size);
         for( i=0;i<size;i++){
      fprintf(fp,"%d %s %s\n",e2[i].emp_id,e2[i].emp_name,e2[i].emp_designation);
@@ -229,7 +229,7 @@ employee e1;
 employee *e2;
 e2=(employee *)calloc((size),sizeof(employee));
 int found=0;
-fp=fopen("EMS_new4.txt","r");
+fp=fopen("EMS.txt","r");
 int line_no=1;
 int line_status=0;
 int i=0;
@@ -281,7 +281,7 @@ while(!feof(fp)){
   fclose(fp);
 
   if(found){
-      fp=fopen("EMS_new4.txt","w");
+      fp=fopen("EMS.txt","w");
       printf("size is %d : \n",size);
         for( i=0;i<size;i++){
         fprintf(fp,"%d %s %s\n",e2[i].emp_id,e2[i].emp_name,e2[i].emp_designation);
